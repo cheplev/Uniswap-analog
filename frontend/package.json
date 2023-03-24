@@ -19,6 +19,7 @@
     "export": "next build && next export"
   },
   "dependencies": {
+    "@rainbow-me/rainbowkit": "^0.12.4",
     "dotenv": "^16.0.3",
     "dotenv-webpack": "^8.0.1",
     "ethers": "^5.7.2",
@@ -26,6 +27,7 @@
     "next-seo": "^5.11.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "wagmi": "^0.12.6",
     "web3modal": "^1.9.12"
   }
 }
