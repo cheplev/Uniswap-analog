@@ -73,7 +73,7 @@ export default function Home() {
    */
   const getAmounts = async () => {
     try {
-      const provider = await getProviderOrSigner(false);
+      const provider = await getProviderOrSigner();
       const signer = await getProviderOrSigner(true);
       const address = await signer.getAddress();
       // get the amount of eth in the user's account

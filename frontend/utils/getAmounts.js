@@ -39,7 +39,12 @@ export const getCDTokensBalance = async (provider, address) => {
       TOKEN_CONTRACT_ABI,
       provider
     );
+    console.log(tokenContract);
+    console.log(address)
+    debugger
     const balanceOfCryptoDevTokens = await tokenContract.balanceOf(address);
+    debugger
+
     return balanceOfCryptoDevTokens;
   } catch (err) {
     console.error(err);
