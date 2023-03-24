@@ -426,7 +426,7 @@ export const TOKEN_CONTRACT_ABI = [
       "type": "receive"
     }
   ];
-export const TOKEN_CONTRACT_ADDRESS = "0x8f5B78e27536eE6938Fa8C0526eAA7Cff4E2e224";
+export const TOKEN_CONTRACT_ADDRESS = "0x4b25B35B61800d2083546383d01a8FbA43151612";
 export const EXCHANGE_CONTRACT_ABI= [
     {
       "inputs": [
@@ -839,4 +839,4 @@ export const EXCHANGE_CONTRACT_ABI= [
       "type": "function"
     }
   ];
-export const EXCHANGE_CONTRACT_ADDRESS = '0x15A2450995D018deBB895742f9bE9581A074fAC7';
+export const EXCHANGE_CONTRACT_ADDRESS = '0xd6B1B52e1aE3B817F6a1e87a1e023610430A830e';
