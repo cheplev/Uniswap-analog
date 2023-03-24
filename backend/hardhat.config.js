@@ -1,24 +1,23 @@
 require("@nomicfoundation/hardhat-toolbox");
 require("dotenv").config();
 
+const { API_URL, PRIVATE_KEY } = process.env;
 //* Default Template for Reference
-/*
+
 module.exports = {
-  solidity: "0.8.9",
-  defaultNetwork: "mumbai",
+  solidity: "0.8.19",
+  defaultNetwork: "polygon_mumbai",
   networks: {
-    mumbai: {
-      url: process.env.ALCHEMY_API_KEY_URL,
-      accounts: [process.env.WALLET_PRIVATE_KEY],
+    hardhat: {
+      chainId: 31337
     },
-  },
-  etherscan: {
-    apiKey: {
-      polygonMumbai: process.env.SCAN_KEY,
+    polygon_mumbai: {
+      url: "https://rpc-mumbai.maticvigil.com",
+      accounts: [process.env.PRIVATE_KEY]
     },
-  },
+  }
 };
-*/
+
 
 // Configuration
 /*
@@ -27,6 +26,6 @@ module.exports = {
   networks - Object which contains the network information
   etherscan - Object to fill in EtherScan Information for contract verification
 */
-module.exports = {
-  solidity: "0.8.9",
-};
+// module.exports = {
+//   solidity: "0.8.9",
+// };
