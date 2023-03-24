@@ -73,7 +73,7 @@ export default function Home() {
    */
   const getAmounts = async () => {
     try {
-      const provider = await getProviderOrSigner();
+      const provider = await getProviderOrSigner(false);
       const signer = await getProviderOrSigner(true);
       const address = await signer.getAddress();
       // get the amount of eth in the user's account
@@ -291,11 +291,11 @@ export default function Home() {
     const provider = await web3ModalRef.current.connect();
     const web3Provider = new providers.Web3Provider(provider);
 
-    // If user is not connected to the mumbai network, let them know and throw an error
+    // If user is not connected to the Goerli network, let them know and throw an error
     const { chainId } = await web3Provider.getNetwork();
     if (chainId !== 80001) {
-      window.alert("Change the network to Polygon mumbai");
-      throw new Error("Change network to mumbai");
+      window.alert("Change the network to Goerli");
+      throw new Error("Change network to Goerli");
     }
 
     if (needSigner) {

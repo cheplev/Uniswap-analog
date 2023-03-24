@@ -839,4 +839,4 @@ export const EXCHANGE_CONTRACT_ABI= [
       "type": "function"
     }
   ];
-export const EXCHANGE_CONTRACT_ADDRESS = '0xd6B1B52e1aE3B817F6a1e87a1e023610430A830e';
+export const EXCHANGE_CONTRACT_ADDRESS = '0xFcCc5B6499c38c8a6659dc24E8E9a6646dD8be4C';
